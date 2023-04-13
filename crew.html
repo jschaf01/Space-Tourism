@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
+  <!-- Google fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;700&family=Bellefair&family=Barlow:wght@400;700&display=swap"
+      rel="stylesheet">
+      
+  <!-- Our custom CSS -->
+  <link rel="stylesheet" href="index.css">
+  <title>Frontend Mentor | Space tourism website</title>
+  <script src="index.js" defer></script>
+  <script src="tabs.js" defer></script>
+</head>
+
+<body class="crew">
+  <a class="skip-to-content" href="#main">Skip to content</a>
+  <header class="primary-header flex">
+    <div>
+      <img src="./assets/shared/logo.svg" alt="space tourism logo" class="logo">
+    </div>
+    <hr/>
+    <button class="mobile-nav-toggle" aria-controls="primary-navigation"><span class="sr-only" aria-expanded="false">Menu</span></button>
+    <nav>
+        <ul id="primary-navigation" data-visible="false" class="primary-navigation underline-indicators flex">
+            <li id="index" ><a class="ff-sans-cond uppercase text-white letter-spacing-2" href="index.html"><span aria-hidden="true">00</span>Home</a>
+            <li id="destination"><a class="ff-sans-cond uppercase text-white letter-spacing-2" href="destination.html"><span aria-hidden="true">01</span>Destination</a>
+            <li id="crew"><a class="ff-sans-cond uppercase text-white letter-spacing-2" href="crew.html"><span aria-hidden="true">02</span>Crew</a>
+            <li id="technology"><a class="ff-sans-cond uppercase text-white letter-spacing-2" href="technology.html"><span aria-hidden="true">03</span>Technology</a>
+        </ul>
+    </nav>
+  </header>
+  <main id="main" class="grid-container grid-container--crew flow">
+    <h1 class="numbered-title"><span aria-hidden="true">02</span> Meet your crew</h1>
+     <div class="dot-indicators flex" role="tablist" aria-label="crew member list">
+        <button aria-selected="true" role="tab" tabindex="0" ID="Commander"><span class="sr-only">The commander</span></button>
+        <button aria-selected="false" role="tab" tabindex="-1" ID="Mission Specialist"><span class="sr-only">The mission specialist</span></button>
+        <button aria-selected="false" role="tab" tabindex="-1" ID="Pilot"><span class="sr-only">The pilot</span></button>
+        <button aria-selected="false" role="tab" tabindex="-1" ID="Flight Engineer"><span class="sr-only">The crew engineer</span></button>
+    </div>
+    <article class="crew-details flow">
+        <header class="flow flow--space-small">
+          <h2 ID="role" class="fs-600 ff-serif uppercase"></h2>
+          <p ID="name" class="fs-700 uppercase ff-serif text"></p>
+        </header>
+        <p ID="bio" class="text-accent"></p>
+      </article>
+        
+      <picture>
+        <source ID="webp" srcset="" type="image/webp">
+        <img ID="png" src="" alt="">
+      </picture>
+  </main>
+</body>
+</html>
