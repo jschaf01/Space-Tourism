@@ -51,6 +51,7 @@ async function fetchData(page, item) {
        return;    
 
     var url = "https://space-tourism-aq8g.onrender.com/" + page + "/";
+    //var url = "http://localhost:3030/" + page + "/";
     var fn = null;
 
     switch(page)
