@@ -50,7 +50,7 @@ async function fetchData(page, item) {
     if ("index" === page)
        return;    
 
-    var url = "http://13.77.142.221:3000/" + page + "/";
+    var url = "https://space-tourism-aq8g.onrender.com/" + page + "/";
     var fn = null;
 
     switch(page)
